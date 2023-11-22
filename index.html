@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Password Maker</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background: rgb(154, 93, 93);background: linear-gradient(90deg, #737373 0%, rgb(10,10,10) 100%);color: rgb(255,255,255);font-family: 'Roboto Slab', serif;font-style: italic;">
+    
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-12 text-center" style="margin-top: 150px;">
+                <h1 style="margin-bottom: 44px;">Create a Password</h1>
+                <div class="input-group"
+                    style="width: 375px;padding-left: 12px;margin-bottom: 56px;position: relative;margin-left: 456px;">
+                    <input class="form-control" type="text" id="passwordWrite" style="width: 267px;height: 44px;" readonly="">
+                    <button class="btn btn-secondary" id="copy" type="button" style="width: 75px;"> <i
+                            class="fas fa-copy"></i></button>
+                </div>
+                <div class="text-center justify-content-evenly" style="display: flex;font-size: 25px;">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label
+                            class="form-check-label" for="formCheck-1">Lowercase</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label
+                            class="form-check-label" for="formCheck-4">Symbols</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label
+                            class="form-check-label" for="formCheck-3">Uppercase</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label
+                            class="form-check-label" for="formCheck-2">Number</label></div>
+                </div>
+                <div class="text-center d-grid justify-content-evenly"
+                    style="display: flex;font-size: 25px;margin-top: 15px;">
+                    <h3>Password Length</h3>
+                    <h3 id="lengthHeader">4</h3>
+                    <input class="form-range" id="rangeInput" type="range"style="width: 440px;margin-top: 16px;margin-bottom: 16px;" min="1" max="16" value="4">
+                </div>
+            </div>
+            <div class="col-md-12 text-center" style="margin-top: 50px;"><button class="btn btn-dark btn-lg"
+                    type="button" style="box-shadow: 0px 0px 5px;" id="createPassword">CREATE</button></div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
